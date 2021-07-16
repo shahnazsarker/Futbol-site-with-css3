@@ -1,0 +1,331 @@
+/* CSS for the whole body */
+body{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;    
+}
+/* header starts here */
+/* nav starts */
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2D25A0;
+    text-align: center;
+    font-size: 20px;
+    height: 70px;
+}
+a{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    padding-left: 10px;
+}
+button{
+    background-color: #E02C6D;
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+    width:168px;
+    height:44px;
+    padding: 10px, 24px, 10px, 24px;
+    box-shadow: 5px 5px 5px rgb(9, 5, 58);
+    margin-right: 30px;
+}
+.fa-arrow-right{
+    font-size: 18px;
+}
+/* Nav Ends */
+/* Banner starts */
+.banner-container{
+    display: flex;
+    width: 100%;
+    background-color: #2D25A0; 
+}
+.banner-info{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 120px;
+    padding-top: 156px;
+    padding-bottom: 240px;
+}
+.banner-heading{
+    font-size: 64px;
+    font-weight: 700;
+    line-height:80px;
+    color: white;
+    padding-right: 80px;
+    
+}
+.banner-animation{
+    padding-bottom:86px;
+    padding-right: 140px;
+    padding-top: 120px;
+   
+}
+.banner-animation img{
+    width: 650px;
+    height: 550px;
+}
+.banner-animation:hover img {
+    transform: scale(1.3) rotateY(360deg);
+    transform-origin: center;
+    transition: transform 3s ease-in-out;
+}
+ img{
+        width: 100%;
+    }
+    /* Banner ends here */
+    /* header ends here */
+/* Players photo album */
+.album {
+    margin-top: 50px;
+}
+.photo-album{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-row-gap: 30px;
+   grid-column-gap: 27px;
+   margin-left: 200px; 
+   margin-right: 200px;
+}
+.photo-frame{
+   width: 330px;
+   height: 474px;
+   border: 1px solid white;
+   overflow: hidden;
+   box-shadow: 10px 1px 20px lightgray;
+}
+.photo-frame img{
+   width: 100%;
+}
+.photo-frame{
+   display: flex;
+flex-direction: column;
+align-items: flex-start;
+   padding: 15px;
+}
+.photo-detail{
+   color: rgba(0, 0, 0, 0.589);
+   font-size: 16px;
+   font-weight: 100;
+  
+}
+.photo-detail h3{
+   color: black;
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 0px;
+}
+
+/* Players photo album */
+/* Highlights section */
+
+h2{
+    background-color: #E02C6D;
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    width:500px;
+    height:44px;
+    padding: 20px, 24px, 10px, 24px
+    ;
+}
+.video-container{
+    
+    border: 1px solid white;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom:27px;
+    box-shadow: 20x 20x 30px rgb(228, 103, 103);
+}
+.live{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-left: 30px;
+    margin-left: 20px;
+    
+}
+.video-container.fa-youtube{
+    font-size: 30px;
+    
+}
+.youtube-live{
+    padding-right: 20px;
+    /* padding-left: 20px; */
+}
+/* Highlights section */
+/* Sponsor Section*/
+hr {
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+}
+.sponsors-container{
+    margin-left: 20px;
+}
+.Sponsors {
+    font-size: 25px;
+    
+}
+.sponsor-company {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: repeat(6, 1fr); */
+    margin: 0 12%;
+    margin-bottom: 70px;
+}
+
+.sponsor-company img {
+    height: 100px;
+    width: 100px;
+}
+
+/* Sponsor Section*/
+
+/* Footer styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 485px;
+    height: 120px;
+    margin: 25px 0px;
+}
+
+.footer-icons{
+    padding-top: 20px;
+    padding-left: 50px;
+
+}
+.footer-icon {
+    font-size: 25px;
+    padding: 20px 5px 5px 22px;
+    height: 40px;
+    width: 40px;
+    color: gray;
+    background-color: lightgray;
+    border-radius: 45px;
+}
+.fab{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer-info{
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 63px;
+    font-weight: 400;
+    padding-left: 40px;
+}
+/* Footer styles */
+
+/* Media queries start here */
+@media only screen and (max-width:668px) {
+    .nav-menu{
+        display: flex; 
+    flex-wrap: wrap;
+    }
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .banner-info {
+        margin-right: 20%;
+        padding-top: 20px;
+        padding-bottom: 30px;
+
+    }
+
+    .banner-heading {
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 40px;
+    }
+
+    .banner-animation img {
+        Width: 280px;
+        Height: 250px;
+        display: flex;
+        align-items: center;
+        padding-left: 30%;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    } 
+
+    .banner-animation:hover img {
+        transform: scale(1.25) rotateY(360deg); 
+        transform-origin: center;
+        transition: transform 3s ease-in-out;
+    }
+    .banner-animation{
+        padding-bottom:20px;
+        padding-right: 140px;
+        padding-top: 10px;}
+
+    .album {
+        justify-content: center;
+        align-items: center;
+    }
+    .photo-album {
+        /* margin-left: 100px;  */
+        margin-right: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .live{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 30px;
+    }
+    .youtube-live{
+        padding-left: 30px;
+    }
+ /* Sponsor section */
+.sponsors-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.sponsor-company {
+    display: grid;
+    padding: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+    /* Footer Section */
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo {
+        width: 100%;
+    }
+
+    .footer-logo img {
+        height: 150px;
+        width: 300px;
+        margin-left: 150px;
+    }
+    
+}
