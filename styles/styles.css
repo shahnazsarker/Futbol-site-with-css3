@@ -2,7 +2,7 @@
 body{
     margin: 0;
     padding:0;
-    font-family: 'Poppins', sans-serif;    
+    font-family: 'Poppins', sans-serif;  
 }
 /* header starts here */
 /* nav starts */
@@ -81,6 +81,7 @@ button{
 /* Players photo album */
 .album {
     margin-top: 50px;
+    
 }
 .photo-album{
    display: grid;
@@ -89,6 +90,7 @@ button{
    grid-column-gap: 27px;
    margin-left: 200px; 
    margin-right: 200px;
+   
 }
 .photo-frame{
    width: 330px;
